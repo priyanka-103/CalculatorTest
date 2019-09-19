@@ -171,7 +171,60 @@ namespace CalculatorTest {
             }
 
 
-       
+        //division
+
+        [Test]
+        public void Getdivision_Input25and5_Returns5point0()
+        {
+
+            //Arrange
+            double number1 = 25;
+            double number2 = 5;
+            double expectedResult = number1 / number2;
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetDivision();
+
+            //Assert 
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [Test]
+        public void GetDivision_Input6point0and3point0_Returns2point0()
+        {
+
+            //Arrange
+            double number1 = 6.0;
+            double number2 = 3.0;
+            double expectedResult = number1 / number2;
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetDivision();
+
+            //Assert 
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [Test]
+        public void GetDivision_Input7point0and3point5_Returns2point0()
+        {
+
+            //Arrange
+            double number1 = 7.0;
+            double number2 = 3.5;
+            double expectedResult = number1 / number2;
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetDivision();
+
+            //Assert 
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+
 
 
     }
